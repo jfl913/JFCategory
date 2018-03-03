@@ -1,0 +1,22 @@
+{
+  "name": "JFCategory",
+  "version": "0.1.0",
+  "summary": "A short description of JFCategory.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/git/JFCategory",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "git": "jfl913@163.com"
+  },
+  "source": {
+    "git": "https://github.com/git/JFCategory.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JFCategory/Classes/**/*"
+}
