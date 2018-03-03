@@ -7,9 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
-#define ScreenWidth = [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight = [UIScreen mainScreen].bounds.size.height
-#define StatusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define StatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 
 @interface UIView (JFAdd)
 
