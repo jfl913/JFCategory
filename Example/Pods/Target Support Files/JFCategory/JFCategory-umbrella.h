@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIColor+JFAdd.h"
 #import "UIView+JFAdd.h"
 
 FOUNDATION_EXPORT double JFCategoryVersionNumber;
