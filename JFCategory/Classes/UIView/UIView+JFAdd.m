@@ -105,4 +105,9 @@
     self.frame = frame;
 }
 
++ (instancetype)jf_instanceFromNib {
+    NSBundle *bundle = [NSBundle bundleForClass:self];
+    return [bundle loadNibNamed:NSStringFromClass(self) owner:nil options:nil].firstObject;
+}
+
 @end
