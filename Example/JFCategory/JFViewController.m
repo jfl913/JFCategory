@@ -7,8 +7,11 @@
 //
 
 #import "JFViewController.h"
+#import "JFTableViewCell.h"
 
-@interface JFViewController ()
+@interface JFViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -18,11 +21,29 @@
 {
     [super viewDidLoad];
 	
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
+    UINib *nib = [UINib nibWithNibName:@"JFTableViewCell" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"JFTableViewCell"];
 }
 
-- (IBAction)startTest:(id)sender {
-    
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44.0;
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    JFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JFTableViewCell" forIndexPath:indexPath];
+    [cell updateCell];
+    return cell;
 }
 
 @end

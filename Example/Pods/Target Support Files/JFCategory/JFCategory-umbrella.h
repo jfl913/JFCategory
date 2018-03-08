@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "NSString+JFAdd.h"
 #import "UIColor+JFAdd.h"
+#import "UIImageView+JFAdd.h"
 #import "UIView+JFAdd.h"
 
 FOUNDATION_EXPORT double JFCategoryVersionNumber;

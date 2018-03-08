@@ -21,6 +21,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		853D810320516157001E77A3 /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853D810120516157001E77A3 /* JFTableViewCell.m */; };
+		853D810420516157001E77A3 /* JFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853D810220516157001E77A3 /* JFTableViewCell.xib */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CEEB2B1F46A04F9C1F5D4246 /* Pods_JFCategory_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478CFF2DB3BCD88EFD491F5 /* Pods_JFCategory_Example.framework */; };
 		ED174F88C6A4AEFE6763C4FF /* Pods_JFCategory_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3164E1EB9DE7F507B965CB35 /* Pods_JFCategory_Tests.framework */; };
@@ -38,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0478CFF2DB3BCD88EFD491F5 /* Pods_JFCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		04855E0AA243DC22F6397A5D /* JFCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JFCategory.podspec; path = ../JFCategory.podspec; sourceTree = "<group>"; };
+		04855E0AA243DC22F6397A5D /* JFCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JFCategory.podspec; path = ../JFCategory.podspec; sourceTree = "<group>"; };
 		12D047314DCE595F5390C60A /* Pods-JFCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCategory_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCategory_Example/Pods-JFCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3164E1EB9DE7F507B965CB35 /* Pods_JFCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A772B0083A3A580930F897 /* Pods-JFCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCategory_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFCategory_Tests/Pods-JFCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,10 +65,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6DC12AB121696B66083DAA95 /* Pods-JFCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCategory_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCategory_Tests/Pods-JFCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		853D810020516157001E77A3 /* JFTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
+		853D810120516157001E77A3 /* JFTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
+		853D810220516157001E77A3 /* JFTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFTableViewCell.xib; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF138C716DB91F0C6472DF69 /* Pods-JFCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCategory_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFCategory_Example/Pods-JFCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E8DC2B9BABF59B4D0C375228 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F485EC6FD0008EB0ADEBA404 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E8DC2B9BABF59B4D0C375228 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F485EC6FD0008EB0ADEBA404 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JFViewController.h */,
 				6003F5A6195388D20070C39A /* JFViewController.m */,
+				853D810020516157001E77A3 /* JFTableViewCell.h */,
+				853D810120516157001E77A3 /* JFTableViewCell.m */,
+				853D810220516157001E77A3 /* JFTableViewCell.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -250,6 +258,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = git;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = JM97U7CRE6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				853D810420516157001E77A3 /* JFTableViewCell.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -406,6 +418,7 @@
 				6003F59E195388D20070C39A /* JFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JFViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				853D810320516157001E77A3 /* JFTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +546,7 @@
 			baseConfigurationReference = 12D047314DCE595F5390C60A /* Pods-JFCategory_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JM97U7CRE6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JFCategory/JFCategory-Prefix.pch";
 				INFOPLIST_FILE = "JFCategory/JFCategory-Info.plist";
@@ -548,6 +562,7 @@
 			baseConfigurationReference = DF138C716DB91F0C6472DF69 /* Pods-JFCategory_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JM97U7CRE6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JFCategory/JFCategory-Prefix.pch";
 				INFOPLIST_FILE = "JFCategory/JFCategory-Info.plist";
