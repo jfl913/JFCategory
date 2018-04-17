@@ -15,7 +15,7 @@
 }
 
 + (instancetype)jf_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha {
-    NSString *colorHexString = [[hexString jf_stringByTrim] uppercaseString];
+    NSString *colorHexString = [[hexString jf_stringByTrimingBothEndsWhitespaceAndNewline] uppercaseString];
     NSUInteger length = colorHexString.length;
     
     if (length == 6) {

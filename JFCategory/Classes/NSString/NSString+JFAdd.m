@@ -9,9 +9,20 @@
 
 @implementation NSString (JFAdd)
 
-- (NSString *)jf_stringByTrim {
+- (NSString *)jf_stringByTrimingBothEndsWhitespaceAndNewline {
     NSCharacterSet *characterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     return [self stringByTrimmingCharactersInSet:characterSet];
+}
+
+- (NSString *)jf_stringByTrimmingAllWhitespace {
+    return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+}
+
+- (NSString *)jf_stringByTrimmingAllWhitespaceAndNewline {
+    NSString *result = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    return result;
 }
 
 @end
