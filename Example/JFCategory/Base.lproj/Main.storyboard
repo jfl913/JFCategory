@@ -20,7 +20,20 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxw-Bn-8SS">
+                                <rect key="frame" x="171.5" y="318" width="31" height="30"/>
+                                <state key="normal" title="测试"/>
+                                <connections>
+                                    <action selector="startTest:" destination="whP-gf-Uak" eventType="touchUpInside" id="Knp-GS-TuL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hxw-Bn-8SS" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="N6X-5k-KgX"/>
+                            <constraint firstItem="hxw-Bn-8SS" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="mx1-c0-oCf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
